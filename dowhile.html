@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Do...While em JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Estrutura <code>do...while</code> em JavaScript</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Introdução</a></li>
+            <li><a href="for.html">Estrutura For</a></li>
+            <li><a href="while.html">Estrutura While</a></li>
+            <li><a href="dowhile.html">Estrutura Do...While</a></li>
+            <li><a href="exemplos.html">Exemplos</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="content">
+            <h2>O que é o laço <code>do...while</code>?</h2>
+            <p>O laço <code>do...while</code> executa o bloco de código pelo menos uma vez, antes de verificar a condição.</p>
+            <pre>
+do {
+    // Código a ser executado
+} while (condição);
+            </pre>
+            <h3>Exemplo 1: Gerar números aleatórios até obter um valor maior que 5</h3>
+            <pre>
+let numero;
+ 
+do {
+    numero = Math.floor(Math.random() * 10);
+    console.log("Número gerado: " + numero);
+} while (numero <= 5);
+            </pre>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 JobCompany. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+tem menu de contexto

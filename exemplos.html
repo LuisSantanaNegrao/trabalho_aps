@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Práticos - Estruturas de Repetição em JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Exemplos Práticos - Estruturas de Repetição em JavaScript</h1>
+    </header>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Introdução</a></li>
+            <li><a href="for.html">Estrutura For</a></li>
+            <li><a href="while.html">Estrutura While</a></li>
+            <li><a href="dowhile.html">Estrutura Do...While</a></li>
+            <li><a href="exemplos.html">Exemplos</a></li>
+        </ul>
+    </nav>
+ 
+    <main class="main">
+        <section class="content">
+            <h2>Exemplos Práticos - Estrutura `for`</h2>
+ 
+            <h3>1. Contar de 1 a 10</h3>
+            <pre>
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+            </pre>
+ 
+            <h3>2. Imprimir números pares de 1 a 20</h3>
+            <pre>
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+            </pre>
+ 
+            <h3>3. Tabuada de 5</h3>
+            <pre>
+for (let i = 1; i <= 10; i++) {
+    console.log(`5 x ${i} = ${5 * i}`);
+}
+            </pre>
+ 
+            <h2>Exemplos Práticos - Estrutura `while`</h2>
+ 
+            <h3>1. Soma de números até ser maior que 20</h3>
+            <pre>
+let soma = 0;
+let numero = 1;
+ 
+while (soma <= 20) {
+    soma += numero;
+    console.log(`Soma atual: ${soma}`);
+    numero++;
+}
+            </pre>
+ 
+            <h3>2. Encontrar o primeiro múltiplo de 3 maior que 10</h3>
+            <pre>
+let numero = 11;
+ 
+while (numero % 3 !== 0) {
+    numero++;
+}
+console.log(`O primeiro múltiplo de 3 maior que 10 é: ${numero}`);
+            </pre>
+ 
+            <h2>Exemplos Práticos - Estrutura `do...while`</h2>
+ 
+            <h3>1. Pedir um número até que seja maior que 5</h3>
+            <pre>
+let numero;
+ 
+do {
+    numero = Math.floor(Math.random() * 10);
+    console.log(`Número gerado: ${numero}`);
+} while (numero <= 5);
+            </pre>
+ 
+            <h3>2. Pedir a idade até que seja maior que 18</h3>
+            <pre>
+let idade;
+ 
+do {
+    idade = prompt("Digite sua idade:");
+} while (idade < 18);
+ 
+console.log("Você tem mais de 18 anos!");
+            </pre>
+        </section>
+    </main>
+ 
+    <footer class="footer">
+        <p>&copy; 2024 JobCompany. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+tem menu de contexto
